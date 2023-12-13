@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tetris</title>
+    <style>
+        body{
+            background-color:#737373;
+        }
+        *{
+            margin:0;
+            padding:0;
+        }
+        .canvas_wrap{
+            display:block;
+            margin:0 auto;
+            padding-top:25px;
+        }
+        .canvas_wrap>*{
+            display:block;
+            margin:0 auto;
+            border: 1px solid #ffffff;
+        }
+        .canvas_wrap>button{
+            font-family:Courier;
+            font-size:30px;
+            font-weight:bold;
+            border:none;
+            background-color:#ffffff;
+            color:#000000;
+        }
+    </style>
+</head>
+<body>
+    <div class="canvas_wrap">
+        <canvas id="tetris" width="240" height="400"></canvas>
+        <button type="button" id="start_game">Start</button>
+    </div>
+    <script src="./matrix.js"></script>
+</body>
+</html>
